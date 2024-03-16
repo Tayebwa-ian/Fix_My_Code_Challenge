@@ -2,7 +2,7 @@
 """Documentation"""
 
 
-class square():
+class square(object):
     """Class Implementation of a square"""
 
     width = 0
