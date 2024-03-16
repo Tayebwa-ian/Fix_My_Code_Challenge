@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """Documentation"""
 
-class square():
-    """Documentation"""
-    
+
+class square:
+    """Class Implementation of a square"""
+
     width = 0
 
-    
     def __init__(self, *args, **kwargs):
-        """Documentation"""
+        """Class intialisation"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -17,12 +17,13 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
-        """Documentation"""
-        return (self.width * 2) + (self.width * 2)
+        """Perimeter of the square"""
+        return (self.width * 2) * 2
 
     def __str__(self):
-        """Documentation"""
+        """String rep of a square object"""
         return "{}/{}".format(self.width, self.width)
+
 
 if __name__ == "__main__":
 
