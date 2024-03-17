@@ -2,14 +2,21 @@
 """Documentation"""
 
 
-class square(object):
-    """Class Implementation of a square"""
+class Square():
+    """Class Implementation of a square
+    Attrs:
+        width: width of the square
+        height: height of the square
+    """
 
     width = 0
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """Class intialisation"""
+        """Class intialisation
+        Params:
+            kwargs: key word arguments used during object instantiation
+        """
         for key, value in kwargs.items():
             setattr(self, key, value)
         self.height = self.width
@@ -29,7 +36,7 @@ class square(object):
 
 if __name__ == "__main__":
 
-    s = square(width=12, height=9)
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
     print(s.PermiterOfMySquare())
